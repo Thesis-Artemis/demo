@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+           <KeyPosition
+               motion:motionTarget="@+id/imgHeadphone"
+               motion:framePosition="30"
+               motion:keyPositionType="parentRelative"
+               motion:percentX="0.9"
+               motion:percentY="0.5"
+               />
+           <KeyAttribute
+
+               android:scaleX="0"
+               android:scaleY="0"
+               motion:framePosition="100"
+               motion:motionTarget="@+id/imgHeadphone"
+               android:rotationX="0" />
+
+           <KeyAttribute
+
+               android:scaleX="1"
+               android:scaleY="1"
+               motion:framePosition="80"
+               motion:motionTarget="@+id/imgHeadphone"
+               android:rotationX="0" />
+
+
+
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imgAdd1" />
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="68dp"
+            android:layout_marginTop="556dp"
+            android:layout_width="70dp"
+            motion:layout_constraintTop_toBottomOf="@+id/txtShopping"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"
+            android:id="@+id/imgHeadphone" />
+        <Constraint
+            android:layout_height="81dp"
+            android:layout_marginTop="180dp"
+            android:layout_width="87dp"
+            motion:layout_constraintTop_toBottomOf="@+id/txtShopping"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="160dp"
+            android:layout_marginStart="160dp"
+            android:id="@+id/imgCamera" />
+        <Constraint
+            android:layout_height="81dp"
+            android:layout_marginTop="348dp"
+            android:layout_width="91dp"
+            motion:layout_constraintTop_toBottomOf="@+id/txtShopping"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="160dp"
+            android:layout_marginStart="160dp"
+            android:id="@+id/imgController" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end1" ><Constraint
+        android:layout_height="81dp"
+        android:layout_marginTop="552dp"
+        android:layout_width="87dp"
+        motion:layout_constraintTop_toBottomOf="@+id/txtShopping"
+        motion:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="168dp"
+        android:layout_marginStart="168dp"
+        android:id="@+id/imgCamera" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end2" >
+        <Constraint
+            android:layout_height="81dp"
+            android:layout_marginTop="552dp"
+            android:layout_width="91dp"
+            motion:layout_constraintTop_toBottomOf="@+id/txtShopping"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="168dp"
+            android:layout_marginStart="168dp"
+            android:id="@+id/imgController" />
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end1"
+
+        >
+        <KeyFrameSet>
+
+
+            <KeyPosition
+                motion:motionTarget="@+id/imgCamera"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.7"
+                />
+            <KeyAttribute
+
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/imgCamera"
+                android:rotationX="0" />
+
+            <KeyAttribute
+
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@+id/imgCamera"
+                android:rotationX="0" />
+
+
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imgAdd2" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end2" >
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:motionTarget="@+id/imgController"
+                motion:framePosition="30"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.7"
+                />
+            <KeyAttribute
+
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/imgController"
+                android:rotationX="0" />
+
+            <KeyAttribute
+
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="95"
+                motion:motionTarget="@+id/imgController"
+                android:rotationX="0" />
+        </KeyFrameSet>
+        <OnClick motion:targetId="@+id/imgAdd" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/end1" >
+        <KeyFrameSet>
+
+
+            <KeyPosition
+                motion:motionTarget="@+id/imgCamera"
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.7"
+                />
+            <KeyAttribute
+
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/imgCamera"
+                android:rotationX="0" />
+
+            <KeyAttribute
+
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="80"
+                motion:motionTarget="@+id/imgCamera"
+                android:rotationX="0" />
+
+
+        </KeyFrameSet>
+
+        <OnClick motion:targetId="@+id/imgAdd2" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/end2" >
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:motionTarget="@+id/imgController"
+                motion:framePosition="30"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.7"
+                />
+            <KeyAttribute
+
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/imgController"
+                android:rotationX="0" />
+
+            <KeyAttribute
+
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="95"
+                motion:motionTarget="@+id/imgController"
+                android:rotationX="0" />
+        </KeyFrameSet>
+
+        <OnClick motion:targetId="@+id/imgAdd" />
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/end1"
+        motion:constraintSetEnd="@+id/end2" >
+        <KeyFrameSet>
+
+            <KeyPosition
+                motion:motionTarget="@+id/imgController"
+                motion:framePosition="30"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.7"
+                />
+            <KeyAttribute
+
+                android:scaleX="0"
+                android:scaleY="0"
+                motion:framePosition="100"
+                motion:motionTarget="@+id/imgController"
+                android:rotationX="0" />
+
+            <KeyAttribute
+
+                android:scaleX="1"
+                android:scaleY="1"
+                motion:framePosition="95"
+                motion:motionTarget="@+id/imgController"
+                android:rotationX="0" />
+        </KeyFrameSet>
+
+        <OnClick motion:targetId="@+id/imgAdd" />
+    </Transition>
+
+
+</MotionScene>
